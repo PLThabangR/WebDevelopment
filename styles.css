@@ -1,0 +1,25 @@
+.table{
+    border:1px solid black;
+    border-collapse: collapse;
+}
+
+  body {
+    display: flex;
+    flex-direction: row;
+    flex-flow: column wrap;
+    background-color: lightblue;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 12px;
+    text-align: center;
+    justify-content: center
+
+  }
+h1,h2{
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-decoration-thickness: 5px;
+  text-decoration-style: solid;
+}
+  ab:hover {
+    color: orange;
+  }
