@@ -140,3 +140,86 @@ switch(day) {
        //this block will run if no condition matches
        console.log('There is no such day');
 }
+
+
+//Lopping 
+
+var x=0
+console.log("Using a while loop")
+while(x <=10){
+    console.log("X:",x)
+    x+=1
+}
+console.log("Using a for loop")
+for(var x=10;x>=0;x--){
+    console.log("X:",x)
+}
+
+for(var x=0;x<=3;x++){
+    console.log("X:",x)
+}
+
+//Task
+for(var x= 5; x>0;x--){
+    console.log(x)
+}
+console.log("Counting completed")
+
+//Whila count down
+x =5
+while(x>0){
+    console.log(x)
+    x--
+}
+console.log("Counting completed in while")
+
+x=2018
+while(x<=2022){
+    console.log(x)
+    x++
+}
+
+//Nested loops
+//nested loops - one inside another
+for (var firstNum = 0; firstNum < 2; firstNum++) {
+    for (var secondNum = 0; secondNum < 10; secondNum++) {
+        console.log(firstNum + ", " + secondNum);
+    }
+}
+
+//nested loops - one inside another
+for (var firstNum = 0; firstNum < 2; firstNum++) {
+    for (var secondNum = 0; secondNum < 10; secondNum++) {
+        console.log(firstNum + " times " + secondNum + " equals " + firstNum * secondNum);
+    }
+}
+
+for(var x =1;x<=10;x++){
+    if(x==1){
+        console.log("Gold medal")
+    }else if(x==2){
+        console.log("Silver medal")
+    }else if(x==3){
+        console.log("Bronze medal")
+    }else{
+        console.log(x)
+    }
+  
+}
+
+for (var i = 1; i <= 10; i++) {
+    switch(i) {
+        case 1:
+            console.log("Gold medal")
+            break
+        case 2:
+            console.log("Silver medal")
+            break
+        case 3:
+            console.log("Bronze medal")
+            break
+        default:
+            //this block will run if no condition matches
+            console.log(i)
+    }
+}
