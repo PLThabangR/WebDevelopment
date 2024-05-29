@@ -223,3 +223,64 @@ for (var i = 1; i <= 10; i++) {
             console.log(i)
     }
 }
+
+/////////FUNCTIONS//////FUCNTIONS////////////////////////////////////////////////////////////////
+function addTwoNumbers(a,b){
+    return a+b*0.5
+}
+answer =addTwoNumbers(28,67)
+console.log(answer)
+
+////Array
+var score = [2,3,46,"Mixed",8,9,"Name"]
+
+for(x=0;x<score.length;x++){
+    console.log(score[x])
+}
+
+for(i in score){
+    console.log(score[i])
+}
+
+for(let i of score){
+    console.log("For OF:")
+    console.log(i)
+}
+
+
+var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'purple', 'pink'];
+
+function listArrayItems(arr) {
+    for (var i = 0; i < arr.length; i++) {
+        console.log(i+1, arr[i])
+    }
+}
+
+listArrayItems(colors)
+
+
+function listArrayItems2(arr) {
+    for (var i = 0; i < arr.length; i++) {
+        if (arr[i] == 'red') {
+            console.log(i*100, "tomato!")
+        } else {
+            console.log(i*100, arr[i])
+        }
+    }
+}
+
+listArrayItems2(colors)
+
+//Find words atest
+function letterFinder(word,match){
+
+    for(i=0;i<word.length;i++){
+        if(word[i] == match){
+            console.log('Found the', match, 'at', i)
+        }else{
+            console.log("No Match found")
+        }
+    }
+}
+
+letterFinder("test","t")
