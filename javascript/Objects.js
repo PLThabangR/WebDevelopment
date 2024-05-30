@@ -103,10 +103,10 @@ console.log(addTwoNumbers3("a",5))
 function letterFinder(word, match) {
 
     try{
-       if(typeof(word) != "string"){
+       if(typeof(word) != "string"&& word.length >= 2){
             console.log("The first argument is not a string")
             throw new ReferenceError()
-        }else if(typeof(match) != "string"){
+        }else if(typeof(match) != "string" && match.length == 1){
             console.log("The Second argument is not a string")
             throw new ReferenceError()
         } else{
@@ -116,15 +116,27 @@ function letterFinder(word, match) {
             console.log('Found the', match, 'at', i)
             break
         } else {
+
             console.log('---No match found at', i)
         }
     }
         }
 
     }catch(error){
+         //if the requirements don't match
+         console.log("Please pass correct arguments to the function")
          console.log("Error!",error)
     }
     
 }
 
 letterFinder("test","e")
+//Recursion
+function factorialv(a){
+    if(a===0){
+        return 1
+    }else{
+    return factorialv(a-1)* a
+}}
+
+console.log(factorialv(5))
