@@ -96,3 +96,35 @@ function addTwoNumbers3(a,b){
 
 
 console.log(addTwoNumbers3("a",5))
+
+
+//Letter finder using try catch
+
+function letterFinder(word, match) {
+
+    try{
+       if(typeof(word) != "string"){
+            console.log("The first argument is not a string")
+            throw new ReferenceError()
+        }else if(typeof(match) != "string"){
+            console.log("The Second argument is not a string")
+            throw new ReferenceError()
+        } else{
+            for(var i = 0; i < word.length; i++) {
+        if(word[i] == match) {
+            //if the current character at position i in the word is equal to the match
+            console.log('Found the', match, 'at', i)
+            break
+        } else {
+            console.log('---No match found at', i)
+        }
+    }
+        }
+
+    }catch(error){
+         console.log("Error!",error)
+    }
+    
+}
+
+letterFinder("test","e")
