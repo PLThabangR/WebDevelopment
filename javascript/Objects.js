@@ -37,3 +37,62 @@ console.log(fruits)
 //MAth method built in function
 
 console.log(Math.round(Math.random()*100,2))
+
+/*String functions
+charAt() 
+
+concat() 
+
+indexOf() 
+
+lastIndexOf() 
+
+split() 
+
+toUpperCase() 
+
+toLowerCase()  
+*/ 
+
+let clothes = []
+
+clothes.push("Nike","Puma","Reebok","Adidas","Lacosta")
+
+console.log(clothes)
+clothes.pop()
+
+favCar ={
+    color :""
+}
+
+favCar.color = "Red"
+console.log(favCar.color)
+
+//Error handling 
+//Syntax error logical error and reference error variable not defined type error
+//Syntax Error invalid javascript code 
+// var a  "there's no assignment operator here";
+//TypeError is thrown when, for example, trying to run a method on a non-supported data type.
+//"hello".pop() // Uncaught TypeError: "hello".pop is not a function
+
+
+//Code errors task 
+function addTwoNumbers3(a,b){
+    try{
+        if(typeof(a) != "number"){
+            console.log("The first argument is not a number")
+            throw new ReferenceError()
+        }else if(typeof(b) != "number"){
+            console.log("The Second argument is not a number")
+            throw new ReferenceError()
+        } else{
+            console.log(a+b)
+        }
+    }catch(error){
+        console.log("Error!",error)
+    }
+    console.log(a+b)
+}
+
+
+console.log(addTwoNumbers3("a",5))
