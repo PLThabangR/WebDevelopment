@@ -24,3 +24,26 @@ let results2 = nums.map(a =>{
     return a*2
 })
 console.log(results2)
+
+///Using spread and rest operator
+const fruits = ['apple', 'pear', 'plum']
+const berries = ['blueberry', 'strawberry']
+//Use spread operator to combine arrays
+const fruitsAndBerries = [...fruits,...berries]
+console.log(fruitsAndBerries)
+
+//Add new members to arrays without using the push() method
+let veggies1 = ['onion', 'parsley'];
+veggies1 = [...veggies1,"Carrot","Cabbage"]
+
+console.log(veggies1);
+
+//Convert a string to an array using the spread operator
+const greetings = "Good-Morning"
+const newArr = [...greetings]
+const newArr2= [...newArr,"H","E"]
+console.log(newArr2)
+
+const meal = ["soup", "steak", "ice cream"]
+let [s] = meal;
+console.log(s);
