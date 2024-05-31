@@ -113,3 +113,18 @@ class Bird extends Animal {
         console.log(this.sound);
     }
 }
+
+
+class Animal {
+
+}
+
+class Cat extends Animal {
+  constructor() {
+    super();
+    this.noise = "meow";
+  }
+}
+
+var result = new Animal();
+console.log(result.noise);
