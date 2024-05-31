@@ -47,3 +47,101 @@ console.log(newArr2)
 const meal = ["soup", "steak", "ice cream"]
 let [s] = meal;
 console.log(s);
+
+
+//Convert Json to javascript object
+const greet = '{"greeting":"Hello"}'
+
+const jsonStr=JSON.parse(greet)
+
+console.log(jsonStr)
+
+
+
+//Convet object to string 
+
+const data ={
+    firstName:"John",
+    secondName:"Doe",
+    age:30
+}
+
+//Use stringyfy to convert to string
+
+const newData = JSON.stringify(data)
+
+console.log(newData)
+console.log(newData.age=40)
+console.log(newData)
+
+
+//Quiz
+function scopeTest() {
+    var y = 44;
+
+    console.log(x);
+}
+
+var x = 33;
+scopeTest();
+
+
+
+
+class Cake {
+    constructor(lyr) {
+        this.layers = lyr;
+    }
+
+    getLayers() {
+        return this.layers;
+    }
+}
+
+class WeddingCake extends Cake {
+    constructor() {
+        super(2);
+    }
+
+    getLayers() {
+        return super.getLayers() * 5;
+    }
+}
+
+var result = new WeddingCake();
+console.log(result.getLayers());
+
+class Animal {
+
+}
+
+class Dog extends Animal {
+    constructor() {
+        super();
+        this.noise = "bark";
+    }
+
+    makeNoise() {
+      return this.noise;
+    }
+}
+
+class Wolf extends Dog {
+    constructor() {
+        super();
+        this.noise = "growl";
+    }
+}
+
+var result = new Wolf();
+console.log(result.makeNoise());
+
+const [a, b]  =  [1,2,3,4] 
+
+console.log(b)
+
+function count(...food) {
+    console.log(food.length)
+}
+
+count("Burgers", "Fries", null);
