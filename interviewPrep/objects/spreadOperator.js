@@ -32,7 +32,9 @@ console.log(changeExistingValues)
 
 person4={...person4, isMarried:true,hobbies:["music", "sports","movies","books"]}
 //console.log(person4)
-
+let count=0;
 for(let key in person4){
+    
     console.log(key,":",person4[key])
+    
 }
