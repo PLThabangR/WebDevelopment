@@ -10,3 +10,19 @@ const results=addFive(10);
 
 //Print the result from the anonymous function
 console.log(results);
+
+//Create a counter
+function createCounter(){
+let count =0;
+ return function(){
+     count++;
+     return count;
+ }
+}
+
+//Call the function
+const counter = createCounter();
+//Call the anonymous function
+const result1 = counter();
+//Print the result from the anonymous function
+console.log(result1);
