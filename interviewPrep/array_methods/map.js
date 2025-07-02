@@ -1,6 +1,6 @@
-
+//High order function
 //.map method returns a new array with the results of calling a function for every array element
-//Map Method create a new array from an array with modifying the original
+//Map Method create a new array from an array without modifying the original
 const nums = [1,2,3,4,5,6,7,8,9,10];
 //Square array
 const results = nums.map((a,i)=>{
