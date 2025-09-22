@@ -41,4 +41,18 @@ console.log(newArr)
 const joinedArr=fruits.join(" ")
 console.log(joinedArr)
 
+//split convert a string into an array
+const str="apple,banana,cherry"
+const splitArr=str.split(",")
+console.log(splitArr)
+
+
+//concat method merge aarays together
+const arr1=[1,2,3]
+const arr2=[4,5,6]
+const mergedArr=arr2.concat(arr1)
+console.log(mergedArr)
+
+
+
 
